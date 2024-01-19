@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    background-color: #ebdac9;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
+    color: #9c775b;
+    text-shadow: 1px 2px 2px #68442c;
+}
+
+#mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.fields {
+    width: 288px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.fields input {
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #220f03;
+}
+
+#size, #weight {
+    background-color: #f1ede9;
+}
+
+#size::placeholder, #weight::placeholder{
+    color: #ce3f1c;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	margin:0;
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #b6816080;
+    
+}
+
+button:hover {
+    background-color: #f8dfcf80;
+    cursor: pointer;
+}
+
+.validation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.validation button {
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: #7F5539;
+}
+
+#result {
+    height: 20px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 200%;
+}
+
+
+#answer {
+    width: 284px;
+    height: 135px;
+    text-justify: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #9C664480;
+    border: 2px solid #7F5539;
+}
+
+#speech {
+    text-align: center;
+    color: #362519;
+}
+
+#score {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#scoreIMG {
+    border-radius: 10px;
+    border: 2px solid #7F5539;
+}
+
+@media screen and (max-width: 750px) {
+    #mainContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #answer {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 2.1em;
+    }
+}

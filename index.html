@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD2-Javascript</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Calculateur D'IMC</h1>
+    <main id="mainContainer">
+        <section id="inputContainer">
+            <div class="fields">
+                <input id="size" min="0" placeholder="Taille en mètre">
+                <input id="weight" min="0" placeholder="Poids en Kg">
+                <button onclick='calculIMC()' type="button">Calculer</button>
+            </div>
+        </section>
+        <section>
+            <div id="answer">
+                <p id="speech"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="score">
+            <img id="scoreIMG" src="./assets/img/score-interpretation.png" alt="illustration resultat" width="50%">
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
